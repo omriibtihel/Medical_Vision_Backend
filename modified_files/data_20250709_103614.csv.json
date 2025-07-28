@@ -1,0 +1,3345 @@
+{
+  "data": [
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5968478328851085,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.2133967102382888,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.12023891425354932,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.0478141222090187,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3681906310588529,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.07311276502595532,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3129026205516292,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.1491025079742323,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.27837888548377004,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.409625367440115,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.171930702357871,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.404340484082807,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2847895428106823,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4588467071111389,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.20120082556757768,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.28916755269247607,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.16217399462130214,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.24088435799612232,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.032178372631183935,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6162048908624679,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.40212020764275436,
+      "Sex": 0
+    },
+    {
+      "Age": 63,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6144224154105948,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7598661579836137,
+      "Sex": 0
+    },
+    {
+      "Age": 48,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2741572330977547,
+      "Sex": 0
+    },
+    {
+      "Age": 33,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8511163925198573,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.39214459941209584,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7535493151541685,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09731690537244356,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5137281881293388,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.36531365313653136,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.07758458940521608,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.10313340421539809,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14838326349365186,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8007692788792294,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2459190693601851,
+      "Sex": 0
+    },
+    {
+      "Age": 46,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.031771843142160236,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.0993182813184064,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.23982112702482958,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.10757395709550313,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08802927012320969,
+      "Sex": 0
+    },
+    {
+      "Age": 73,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.40502845706423163,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.2492338482706861,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.29773594346112947,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.18734755144161608,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.18844205391206453,
+      "Sex": 0
+    },
+    {
+      "Age": 66,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.057477015448120554,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.21333416723997745,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.1257739696041028,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7948276940396523,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4230095690787416,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.41112639939958723,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.1447557695915942,
+      "Sex": 0
+    },
+    {
+      "Age": 62,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6540121333416724,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.38113703170930013,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.12258427669022452,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.24676339983738818,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.15857777221840014,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6741197072987679,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11951966977296888,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3888298205015948,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7381950090687348,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.10025642629307648,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.45106010382137723,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.06570141972606164,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.21996372506097944,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6498530239539683,
+      "Sex": 0
+    },
+    {
+      "Age": 29,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20598536493839512,
+      "Sex": 0
+    },
+    {
+      "Age": 17,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14269185064732004,
+      "Sex": 0
+    },
+    {
+      "Age": 54,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5750515979736069,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.563105885296141,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.24072800050034399,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4192257176809056,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.13559322033898305,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5202326599537183,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3377321908812308,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.45781474763900176,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15413721933829508,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4031521671148915,
+      "Sex": 0
+    },
+    {
+      "Age": 19,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.22027644005253613,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14294202264056538,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.23969604102820685,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.04665707674025892,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.10766777159297015,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15813997123022078,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.11876915379323284,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.23972731252736257,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.22915754581274622,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.28797923572456063,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5260491587966728,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.34217274376133583,
+      "Sex": 0
+    },
+    {
+      "Age": 62,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32287822878228783,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.277909812996435,
+      "Sex": 0
+    },
+    {
+      "Age": 29,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7249046219275751,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7193070235787105,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.27350053161548565,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.16120457814747635,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 1,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5980986928513352,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.918443930202014,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32697479517168054,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.17518293827006068,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20592282194008377,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.2144599412095816,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08433923322284068,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6887547689036212,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08440177622115204,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17774720120082554,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.42979548439552195,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.10657326912252171,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.33088373256613923,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.03818250046907249,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.012946400650447172,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09071861905059728,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2345362436675214,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.0941897554568766,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3760710488460817,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.10147601476014757,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11989492776283693,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.12580524110325847,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.600600412783789,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6502908249421477,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3420163862655575,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5061917568328225,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32785039714803926,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.1946963537431984,
+      "Sex": 0
+    },
+    {
+      "Age": 19,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6160485333666896,
+      "Sex": 0
+    },
+    {
+      "Age": 66,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3151541684908375,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.04928388266933515,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8528675964725749,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.037775970980048784,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.44468071799362063,
+      "Sex": 0
+    },
+    {
+      "Age": 52,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8334792669960597,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.22918881731190194,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6103258490212021,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4617862280317719,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17730940021264618,
+      "Sex": 0
+    },
+    {
+      "Age": 55,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.1472262180248921,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20717368190631058,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.15867158671586715,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11870661079492148,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.608918631559197,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.07355056601413472,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2866658327600225,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.10616673963349801,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09925573832009504,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17940459065607606,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.18881731190193257,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.03349177559572205,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.05885296141097003,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.07602101444743257,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.14822690599787353,
+      "Sex": 0
+    },
+    {
+      "Age": 55,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.031021327162424166,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2618362624304209,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3269435236725248,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.13346675839639754,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.1550440928138095,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.522046406904747,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.13055850897492027,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.208080555381825,
+      "Sex": 0
+    },
+    {
+      "Age": 30,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.13052723747576456,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.11495403089624116,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.20607917943586215,
+      "Sex": 0
+    },
+    {
+      "Age": 21,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6993245356182375,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3983363562449184,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3760710488460817,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6371880667959221,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.24851460379010565,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5232972668709738,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15613859528425794,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2067046094189755,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11720557883544934,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3426105447495153,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.38995559447119893,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20317093001438488,
+      "Sex": 0
+    },
+    {
+      "Age": 73,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3777284383013321,
+      "Sex": 0
+    },
+    {
+      "Age": 48,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.13062105197323157,
+      "Sex": 0
+    },
+    {
+      "Age": 25,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.398461442241541,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.30333354180999433,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.30089436487585214,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5175120395271748,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2381324660704234,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.1693977109262618,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2883544937144287,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.966883482394146,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6136718994308588,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.11195196697729688,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.1292763775095378,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8983676277440741,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4585339921195821,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.39783601225842763,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.05447495152917628,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3139971230220776,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.01563574957783476,
+      "Sex": 0
+    },
+    {
+      "Age": 46,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8886421915066608,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.16567640252673713,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.17940459065607606,
+      "Sex": 0
+    },
+    {
+      "Age": 52,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11335918443930201,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.24238538995559444,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.15885921571080117,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5968478328851085,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.2133967102382888,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.12023891425354932,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.0478141222090187,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3681906310588529,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.07311276502595532,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3129026205516292,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.1491025079742323,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.27837888548377004,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.409625367440115,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.171930702357871,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.404340484082807,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2847895428106823,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4588467071111389,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.20120082556757768,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.28916755269247607,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.16217399462130214,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.24088435799612232,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.032178372631183935,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6162048908624679,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.40212020764275436,
+      "Sex": 0
+    },
+    {
+      "Age": 63,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6144224154105948,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7598661579836137,
+      "Sex": 0
+    },
+    {
+      "Age": 48,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2741572330977547,
+      "Sex": 0
+    },
+    {
+      "Age": 33,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8511163925198573,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.39214459941209584,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7535493151541685,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09731690537244356,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5137281881293388,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.36531365313653136,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.07758458940521608,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.10313340421539809,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14838326349365186,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8007692788792294,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2459190693601851,
+      "Sex": 0
+    },
+    {
+      "Age": 46,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.031771843142160236,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.0993182813184064,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.23982112702482958,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.10757395709550313,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08802927012320969,
+      "Sex": 0
+    },
+    {
+      "Age": 73,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.40502845706423163,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.2492338482706861,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.29773594346112947,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.18734755144161608,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.18844205391206453,
+      "Sex": 0
+    },
+    {
+      "Age": 66,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.057477015448120554,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.21333416723997745,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.1257739696041028,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7948276940396523,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4230095690787416,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.41112639939958723,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.1447557695915942,
+      "Sex": 0
+    },
+    {
+      "Age": 62,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6540121333416724,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.38113703170930013,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.12258427669022452,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.24676339983738818,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.15857777221840014,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6741197072987679,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11951966977296888,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3888298205015948,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7381950090687348,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.10025642629307648,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.45106010382137723,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.06570141972606164,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.21996372506097944,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6498530239539683,
+      "Sex": 0
+    },
+    {
+      "Age": 29,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20598536493839512,
+      "Sex": 0
+    },
+    {
+      "Age": 17,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14269185064732004,
+      "Sex": 0
+    },
+    {
+      "Age": 54,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5750515979736069,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.563105885296141,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.24072800050034399,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4192257176809056,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.13559322033898305,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5202326599537183,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3377321908812308,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.45781474763900176,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15413721933829508,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4031521671148915,
+      "Sex": 0
+    },
+    {
+      "Age": 19,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.22027644005253613,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.14294202264056538,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.23969604102820685,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.04665707674025892,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.10766777159297015,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15813997123022078,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.11876915379323284,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.23972731252736257,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.22915754581274622,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.28797923572456063,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5260491587966728,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.34217274376133583,
+      "Sex": 0
+    },
+    {
+      "Age": 62,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32287822878228783,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.277909812996435,
+      "Sex": 0
+    },
+    {
+      "Age": 29,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7249046219275751,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.7193070235787105,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.27350053161548565,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.16120457814747635,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 1,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5980986928513352,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.918443930202014,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32697479517168054,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.17518293827006068,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20592282194008377,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.2144599412095816,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08433923322284068,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6887547689036212,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.08440177622115204,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17774720120082554,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.42979548439552195,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.10657326912252171,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.33088373256613923,
+      "Sex": 0
+    },
+    {
+      "Age": 50,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.03818250046907249,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.012946400650447172,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09071861905059728,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2345362436675214,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.0941897554568766,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3760710488460817,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.10147601476014757,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11989492776283693,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.12580524110325847,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.600600412783789,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6502908249421477,
+      "Sex": 0
+    },
+    {
+      "Age": 15,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3420163862655575,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5061917568328225,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.32785039714803926,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.1946963537431984,
+      "Sex": 0
+    },
+    {
+      "Age": 19,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6160485333666896,
+      "Sex": 0
+    },
+    {
+      "Age": 66,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3151541684908375,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.04928388266933515,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8528675964725749,
+      "Sex": 0
+    },
+    {
+      "Age": 32,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.037775970980048784,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.44468071799362063,
+      "Sex": 0
+    },
+    {
+      "Age": 52,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8334792669960597,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.22918881731190194,
+      "Sex": 0
+    },
+    {
+      "Age": 24,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6103258490212021,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4617862280317719,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17730940021264618,
+      "Sex": 0
+    },
+    {
+      "Age": 55,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.1472262180248921,
+      "Sex": 0
+    },
+    {
+      "Age": 35,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20717368190631058,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.15867158671586715,
+      "Sex": 0
+    },
+    {
+      "Age": 69,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11870661079492148,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.608918631559197,
+      "Sex": 0
+    },
+    {
+      "Age": 60,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.07355056601413472,
+      "Sex": 0
+    },
+    {
+      "Age": 74,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2866658327600225,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.10616673963349801,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.09925573832009504,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.17940459065607606,
+      "Sex": 0
+    },
+    {
+      "Age": 26,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.18881731190193257,
+      "Sex": 0
+    },
+    {
+      "Age": 61,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.03349177559572205,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.05885296141097003,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.07602101444743257,
+      "Sex": 0
+    },
+    {
+      "Age": 68,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.14822690599787353,
+      "Sex": 0
+    },
+    {
+      "Age": 55,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.031021327162424166,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2618362624304209,
+      "Sex": 0
+    },
+    {
+      "Age": 37,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3269435236725248,
+      "Sex": 0
+    },
+    {
+      "Age": 49,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.13346675839639754,
+      "Sex": 0
+    },
+    {
+      "Age": 31,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.1550440928138095,
+      "Sex": 0
+    },
+    {
+      "Age": 53,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.522046406904747,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.13055850897492027,
+      "Sex": 0
+    },
+    {
+      "Age": 34,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.208080555381825,
+      "Sex": 0
+    },
+    {
+      "Age": 30,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.13052723747576456,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.11495403089624116,
+      "Sex": 0
+    },
+    {
+      "Age": 43,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.20607917943586215,
+      "Sex": 0
+    },
+    {
+      "Age": 21,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6993245356182375,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3983363562449184,
+      "Sex": 0
+    },
+    {
+      "Age": 38,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3760710488460817,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6371880667959221,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.24851460379010565,
+      "Sex": 0
+    },
+    {
+      "Age": 51,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5232972668709738,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.15613859528425794,
+      "Sex": 0
+    },
+    {
+      "Age": 28,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2067046094189755,
+      "Sex": 0
+    },
+    {
+      "Age": 45,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11720557883544934,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3426105447495153,
+      "Sex": 0
+    },
+    {
+      "Age": 41,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.38995559447119893,
+      "Sex": 0
+    },
+    {
+      "Age": 42,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.20317093001438488,
+      "Sex": 0
+    },
+    {
+      "Age": 73,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3777284383013321,
+      "Sex": 0
+    },
+    {
+      "Age": 48,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.13062105197323157,
+      "Sex": 0
+    },
+    {
+      "Age": 25,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.398461442241541,
+      "Sex": 0
+    },
+    {
+      "Age": 39,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.30333354180999433,
+      "Sex": 0
+    },
+    {
+      "Age": 67,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.30089436487585214,
+      "Sex": 0
+    },
+    {
+      "Age": 22,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.5175120395271748,
+      "Sex": 0
+    },
+    {
+      "Age": 59,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.2381324660704234,
+      "Sex": 0
+    },
+    {
+      "Age": 20,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.1693977109262618,
+      "Sex": 0
+    },
+    {
+      "Age": 36,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.2883544937144287,
+      "Sex": 0
+    },
+    {
+      "Age": 18,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.966883482394146,
+      "Sex": 0
+    },
+    {
+      "Age": 57,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.6136718994308588,
+      "Sex": 0
+    },
+    {
+      "Age": 70,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugB",
+      "Na_to_K": 0.11195196697729688,
+      "Sex": 0
+    },
+    {
+      "Age": 47,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.1292763775095378,
+      "Sex": 0
+    },
+    {
+      "Age": 65,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8983676277440741,
+      "Sex": 0
+    },
+    {
+      "Age": 64,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.4585339921195821,
+      "Sex": 0
+    },
+    {
+      "Age": 58,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.39783601225842763,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugA",
+      "Na_to_K": 0.05447495152917628,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.3139971230220776,
+      "Sex": 0
+    },
+    {
+      "Age": 72,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.01563574957783476,
+      "Sex": 0
+    },
+    {
+      "Age": 46,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "DrugY",
+      "Na_to_K": 0.8886421915066608,
+      "Sex": 0
+    },
+    {
+      "Age": 56,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.16567640252673713,
+      "Sex": 0
+    },
+    {
+      "Age": 16,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugC",
+      "Na_to_K": 0.17940459065607606,
+      "Sex": 0
+    },
+    {
+      "Age": 52,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.11335918443930201,
+      "Sex": 0
+    },
+    {
+      "Age": 23,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.24238538995559444,
+      "Sex": 0
+    },
+    {
+      "Age": 40,
+      "BP": 0,
+      "Cholesterol": 0,
+      "Drug": "drugX",
+      "Na_to_K": 0.15885921571080117,
+      "Sex": 0
+    }
+  ],
+  "preprocessing_steps": [
+    {
+      "timestamp": "2025-07-09T09:36:03.592Z",
+      "operation": "Data Transformation - Min-Max Normalization",
+      "details": "Applied Min-Max Normalization to selected columns",
+      "affectedColumns": [
+        "Na_to_K"
+      ],
+      "stats": {
+        "transformationType": "Min-Max Normalization",
+        "columnStats": {
+          "Na_to_K": {
+            "min": 6.269,
+            "max": 38.247,
+            "mean": 16.08448500000002,
+            "stdDev": 7.205873008163199
+          }
+        },
+        "normalizedColumnsCount": 1,
+        "targetFeatureExcluded": "Drug"
+      },
+      "dataSample": [
+        {
+          "Age": 23,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Drug": "DrugY",
+          "Na_to_K": 25.355,
+          "Sex": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-07-09T09:35:38.464Z",
+      "operation": "Label Encoding",
+      "details": "Encodage label appliqué à 3 colonnes",
+      "affectedColumns": [
+        "BP",
+        "Cholesterol",
+        "Sex"
+      ],
+      "stats": {
+        "method": "Label Encoding",
+        "encodingMaps": {
+          "BP": {
+            "0": 0
+          },
+          "Cholesterol": {
+            "0": 0
+          },
+          "Sex": {
+            "0": 0
+          }
+        },
+        "targetFeaturePreserved": "Drug"
+      },
+      "dataSample": [
+        {
+          "Age": 23,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Drug": "DrugY",
+          "Na_to_K": 25.355,
+          "Sex": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-07-09T09:35:14.655Z",
+      "operation": "Data Cleaning",
+      "details": "Removed null values by mean imputation",
+      "affectedColumns": [],
+      "stats": {
+        "totalNullValues": 0,
+        "nullValuesByColumn": {
+          "Age": 0,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Na_to_K": 0,
+          "Sex": 0
+        },
+        "meansUsed": {
+          "Age": 44.315,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Na_to_K": 16.08448500000002,
+          "Sex": 0
+        },
+        "targetFeatureProtected": "Drug"
+      },
+      "dataSample": [
+        {
+          "Age": 23,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Drug": "DrugY",
+          "Na_to_K": 25.355,
+          "Sex": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2025-07-09T09:34:42.454Z",
+      "operation": "Data Cleaning",
+      "details": "Removed null values by mean imputation",
+      "affectedColumns": [
+        "BP",
+        "Cholesterol",
+        "Sex"
+      ],
+      "stats": {
+        "totalNullValues": 1200,
+        "nullValuesByColumn": {
+          "Age": 0,
+          "BP": 400,
+          "Cholesterol": 400,
+          "Na_to_K": 0,
+          "Sex": 400
+        },
+        "meansUsed": {
+          "Age": 44.315,
+          "BP": 0,
+          "Cholesterol": 0,
+          "Na_to_K": 16.08448500000002,
+          "Sex": 0
+        },
+        "targetFeatureProtected": "Drug"
+      },
+      "dataSample": [
+        {
+          "Age": 23,
+          "BP": "HIGH",
+          "Cholesterol": "HIGH",
+          "Drug": "DrugY",
+          "Na_to_K": 25.355,
+          "Sex": "F"
+        }
+      ]
+    }
+  ],
+  "modification": "Data Transformation - Min-Max Normalization: Applied Min-Max Normalization to selected columns (Colonnes: Na_to_K) | Label Encoding: Encodage label appliqué à 3 colonnes (Colonnes: BP, Cholesterol, Sex) | Data Cleaning: Removed null values by mean imputation  | Data Cleaning: Removed null values by mean imputation (Colonnes: BP, Cholesterol, Sex)"
+}
