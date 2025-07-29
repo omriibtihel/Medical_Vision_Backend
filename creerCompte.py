@@ -146,15 +146,25 @@ class User(UserMixin, db.Model):
     projects = db.relationship(
         "Project", backref="user", cascade="all, delete-orphan", lazy=True
     )
+    logins = db.relationship(
+        "LoginLog",
+        backref="user",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+        lazy=True
+    )
+
 
 
 class LoginLog(db.Model):
     __tablename__ = "login_log"
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    user_id = db.Column(
+        db.Integer,
+        db.ForeignKey("user.id", ondelete="CASCADE"),
+        nullable=False
+    )
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
-
-    user = db.relationship("User", backref=db.backref("logins", lazy=True))
 
 
 class Project(db.Model):
@@ -182,6 +192,13 @@ class ImportedFile(db.Model):
         db.String(300), nullable=False
     )  # Nouveau champ pour le chemin complet du fichier
     project_id = db.Column(db.Integer, db.ForeignKey("project.id"), nullable=False)
+    modified_files = db.relationship(
+        "ModifiedFile",
+        backref="imported_file",
+        cascade="all, delete-orphan",
+        lazy=True,
+        foreign_keys="[ModifiedFile.parent_id]"
+    )
 
 
 class TargetFeature(db.Model):
@@ -359,6 +376,9 @@ def reject_user(user_id):
             f"Sending email - Subject: {msg.subject}, Sender: {msg.sender}, Recipients: {msg.recipients}"
         )
         mail.send(msg)
+        
+        # Supprimer les logs (si la cascade n'est pas active côté SQL)
+        LoginLog.query.filter_by(user_id=user.id).delete()
 
         # Delete user
         db.session.delete(user)
@@ -638,19 +658,21 @@ def uploaded_file(filename):
 def delete_project(project_id):
     try:
         project = Project.query.get_or_404(project_id)
-        # if project.user_id != get_jwt_identity():
-        # return jsonify(message='Unauthorized access'), 401
 
         for imported_file in project.imported_files:
+            for modified_file in imported_file.modified_files:
+                db.session.delete(modified_file)
             db.session.delete(imported_file)
 
         db.session.delete(project)
         db.session.commit()
 
         return jsonify(message="Project deleted successfully"), 200
+
     except Exception as e:
         print(f"Error deleting project: {e}")
         return jsonify(message="Error deleting project"), 500
+
 
 
 @app.route("/import-database/<int:project_id>", methods=["POST"])
