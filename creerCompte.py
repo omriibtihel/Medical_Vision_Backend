@@ -222,6 +222,8 @@ class ModifiedFile(db.Model):
     parent_id = db.Column(db.Integer, db.ForeignKey("imported_file.id"))
     parent = db.relationship("ImportedFile", foreign_keys=[parent_id])
     preprocessing_steps = db.Column(db.JSON)
+    is_for_prediction = db.Column(db.Boolean, default=False)
+
 
 
 class Models(db.Model):
@@ -990,24 +992,31 @@ def saveMod(project_id):
 
         modification = data.get("modification", "Traitement personnalisé")
 
-        # 🎯 Si pas fourni → on récupère depuis la base
+        # Récupérer l'indicateur de prédiction
+        is_for_prediction = data.get("isForPrediction", False)
+
+        # 🎯 Récupération de la target feature
         target_feature = data.get("target_feature")
         if not target_feature:
             tf = TargetFeature.query.filter_by(project_id=project_id).first()
             target_feature = tf.name if tf else None
 
-        # On récupère le fichier importé initial pour ce projet
+        # Fichier parent
         imported_file = ImportedFile.query.filter_by(project_id=project_id).first()
         if not imported_file:
-            return (
-                jsonify({"error": "Aucun fichier importé trouvé pour ce projet"}),
-                400,
-            )
+            return jsonify({"error": "Aucun fichier importé trouvé pour ce projet"}), 400
 
-        parent_id = imported_file.id  # On pointe vers ce fichier comme parent
+        parent_id = imported_file.id
 
-        # Sauvegarder le fichier
-        filename = generate_professional_filename(project_id, modification)
+        # Sauvegarde du fichier
+        # Récupérer le flag de prédiction
+        is_for_prediction = data.get("isForPrediction", False)
+
+        # Adapter le nom du fichier
+        if is_for_prediction:
+            filename = f"prediction_v{project_id}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}.csv"
+        else:
+            filename = generate_professional_filename(project_id, modification)
         filepath = save_file(data, filename)
 
         new_file = ModifiedFile(
@@ -1017,6 +1026,7 @@ def saveMod(project_id):
             modification=modification,
             parent_id=parent_id,
             target_feature=target_feature,
+            is_for_prediction=is_for_prediction,  # ✅ Ajout ici
         )
         db.session.add(new_file)
         db.session.commit()
@@ -1037,6 +1047,7 @@ def saveMod(project_id):
     except Exception as e:
         app.logger.error(f"Error saving data: {str(e)}")
         return jsonify({"error": str(e)}), 400
+
 
 
 @app.route("/historique/<int:project_id>", methods=["GET"])
@@ -1061,6 +1072,8 @@ def historique(project_id):
                             else "Unknown"
                         ),
                         "parent_id": mf.parent_id,
+                        "is_for_prediction": mf.is_for_prediction,  # ✅ ici
+
                     }
                     for mf in mod_files
                 ]
@@ -1137,16 +1150,23 @@ def get_file_data(file_id):
         # Lire les données depuis le fichier
         if file.filepath.endswith(".csv"):
             df = pd.read_csv(file.filepath)
-            data = df.replace({np.nan: None}).to_dict("records")  # CSV → liste de dicts
+            data = df.replace({np.nan: None}).to_dict("records")
         elif file.filepath.endswith(".json"):
             with open(file.filepath, encoding="utf-8") as f:
-                data = json.load(f)  # JSON → tel quel, dict ou liste
+                data = json.load(f)
+                # Si c'est un objet avec une propriété data, utiliser cette propriété
+                if isinstance(data, dict) and "data" in data:
+                    data = data["data"]
         else:
             return jsonify({"error": "Unsupported file format"}), 400
 
+        # S'assurer que data est une liste
+        if not isinstance(data, list):
+            data = [data]
+
         # Préparer la réponse
         response = {
-            "data": data,
+            "data": data,  # Toujours un tableau
             "metadata": {
                 "file_id": file.id,
                 "target_feature": file.target_feature,
@@ -1156,11 +1176,8 @@ def get_file_data(file_id):
         }
 
         return jsonify(response), 200
-
     except Exception as e:
-        app.logger.error(
-            f"Erreur lors de la récupération du fichier {file_id} : {str(e)}"
-        )
+        app.logger.error(f"Erreur lors de la récupération du fichier {file_id} : {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 
@@ -1857,6 +1874,14 @@ def train_model(project_id):
                 model_filename = f"model_{project_id}_{model_name}_{trained_at.replace(':', '-')}.joblib"
                 model_path = os.path.join(mod_FOLDER, model_filename)
                 joblib.dump(best_model, model_path)
+                
+                # Sauvegarder aussi les colonnes d'entraînement
+                # Sauvegarde aussi les colonnes d'entraînement
+                columns_path = model_path.replace(".joblib", "_columns.json")
+                with open(columns_path, "w", encoding="utf-8") as f:
+                    json.dump(list(X.columns), f)
+
+
 
                 model_entry = Models(
                     modelname=model_name,
@@ -2037,6 +2062,14 @@ def train_model(project_id):
                 model_filename = f"model_{project_id}_{model_name}_{trained_at.replace(':', '-')}.joblib"
                 model_path = os.path.join(mod_FOLDER, model_filename)
                 joblib.dump(best_model, model_path)
+                
+                # Sauvegarder aussi les colonnes d'entraînement
+                # Sauvegarde aussi les colonnes d'entraînement
+                columns_path = model_path.replace(".joblib", "_columns.json")
+                with open(columns_path, "w", encoding="utf-8") as f:
+                    json.dump(list(X.columns), f)
+
+
 
                 model_entry = Models(
                     modelname=model_name,
@@ -2406,6 +2439,197 @@ def deploy_model(file_id):
         )
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+
+
+def predict_from_dataframe(model, df, training_columns):
+    """
+    Nettoie les données d'entrée, aligne les colonnes et effectue une prédiction
+    avec le modèle scikit-learn fourni.
+
+    Args:
+        model: modèle entraîné (scikit-learn, XGBoost, etc.)
+        df (pd.DataFrame): données d'entrée à prédire
+        training_columns (list): liste des colonnes attendues par le modèle
+
+    Returns:
+        list: prédictions
+    """
+    # 1. Remplacer les chaînes vides par NaN
+    df.replace('', np.nan, inplace=True)
+
+    # 2. Conversion explicite des colonnes numériques
+    for col in df.columns:
+        try:
+            df[col] = df[col].astype(float)
+        except ValueError:
+            pass  # Certaines colonnes resteront object/catégorielles
+
+    # 3. Encodage des colonnes object (catégorielles)
+    for col in df.select_dtypes(include=["object"]).columns:
+        df[col] = df[col].fillna("inconnu")
+        df[col] = df[col].astype(str)
+        df[col] = pd.factorize(df[col])[0]
+
+    # 4. Imputation des valeurs manquantes restantes
+    df.fillna(0, inplace=True)
+
+    # 5. Ajouter les colonnes manquantes et aligner l'ordre
+    for col in training_columns:
+        if col not in df.columns:
+            df[col] = 0
+    df = df[training_columns]
+
+    # 6. Prédiction
+    if hasattr(model, "predict_proba"):
+        predictions = model.predict(df)
+    elif hasattr(model, "decision_function"):
+        decision = model.decision_function(df)
+        if len(decision.shape) > 1:
+            predictions = np.argmax(decision, axis=1)
+        else:
+            predictions = (decision > 0).astype(int)
+    else:
+        predictions = model.predict(df)
+
+    return predictions.tolist()
+
+@app.route("/projects/<int:project_id>/predict", methods=["POST"])
+@jwt_required()
+def predict_model(project_id):
+    try:
+        app.logger.info("✅ [PREDICT] Requête reçue")
+        app.logger.info(f"🔍 Content-Type: {request.content_type}")
+
+        # 🔍 Identifier le modèle à utiliser
+        model_name = None
+        if request.content_type.startswith("multipart/form-data"):
+            model_name = request.form.get("model")
+        else:
+            try:
+                json_data = request.get_json(force=True)
+                model_name = json_data.get("model") if json_data else None
+            except Exception as e:
+                return jsonify({"error": f"Échec parsing JSON : {str(e)}"}), 400
+
+        if not model_name:
+            return jsonify({"error": "Aucun modèle spécifié"}), 400
+
+        # 📦 Charger le modèle
+        model_record = Models.query.filter_by(project_id=project_id, modelname=model_name).first()
+        if not model_record or not os.path.exists(model_record.modelpath):
+            return jsonify({"error": f"Modèle ou fichier introuvable : {model_name}"}), 404
+
+        model_path = model_record.modelpath
+        trained_model = joblib.load(model_path)
+        app.logger.info("✅ Modèle chargé avec succès")
+
+        # 📄 Charger les colonnes d'entraînement
+        columns_path = model_path.replace(".joblib", "_columns.json")
+        if not os.path.exists(columns_path):
+            return jsonify({"error": f"Fichier colonnes introuvable : {columns_path}"}), 500
+
+        with open(columns_path, "r", encoding="utf-8") as f:
+            training_columns = json.load(f)
+
+        # 📂 Lire les données utilisateur
+        df = None
+        if request.content_type.startswith("multipart/form-data") and "file" in request.files:
+            uploaded_file = request.files["file"]
+            if not uploaded_file.filename.lower().endswith(".csv"):
+                return jsonify({"error": "Le fichier doit être un .csv"}), 400
+            try:
+                df = pd.read_csv(uploaded_file, encoding="utf-8")
+            except UnicodeDecodeError:
+                uploaded_file.seek(0)
+                df = pd.read_csv(uploaded_file, encoding="latin1")
+        else:
+            try:
+                json_data = request.get_json(force=True)
+                if json_data and "data" in json_data:
+                    input_data = json_data["data"]
+                    if isinstance(input_data, dict):
+                        input_data = [input_data]
+                    df = pd.DataFrame(input_data)
+            except Exception as e:
+                return jsonify({"error": f"Erreur parsing JSON : {str(e)}"}), 400
+
+        if df is None:
+            return jsonify({"error": "Aucune donnée valide reçue pour la prédiction."}), 400
+
+        app.logger.info(f"📋 Données reçues : {df.shape}")
+
+
+        # Prédiction sans utiliser safe_predict
+        try:
+            predictions = predict_from_dataframe(trained_model, df, training_columns)
+            result_lines = [f"{pred}" for i, pred in enumerate(predictions)]
+            return jsonify({"predictions": result_lines})
+
+        except Exception as e:
+            app.logger.error(f"❌ Erreur lors de la prédiction : {e}")
+            return jsonify({"error": f"Erreur de prédiction : {str(e)}"}), 500
+
+
+    except Exception as e:
+        app.logger.exception(f"❌ Erreur globale : {str(e)}")
+        return jsonify({"error": f"Erreur interne : {str(e)}"}), 500
+
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
+from flask import send_file
+import io
+
+@app.route("/export-prediction-pdf/<int:project_id>", methods=["POST"])
+@jwt_required()
+def export_prediction_pdf(project_id):
+    try:
+        data = request.get_json()
+        predictions = data.get("predictions", [])
+        model_name = data.get("model", "Modèle inconnu")
+        date_now = datetime.now().strftime("%d/%m/%Y %H:%M")
+        user_id = get_jwt_identity()
+
+        buffer = io.BytesIO()
+        doc = SimpleDocTemplate(buffer, pagesize=A4)
+        styles = getSampleStyleSheet()
+        story = []
+
+        story.append(Paragraph(f"<b>Rapport de Prédiction</b>", styles["Title"]))
+        story.append(Spacer(1, 12))
+        story.append(Paragraph(f"Projet ID : {project_id}", styles["Normal"]))
+        story.append(Paragraph(f"Modèle utilisé : {model_name}", styles["Normal"]))
+        story.append(Paragraph(f"Date : {date_now}", styles["Normal"]))
+        story.append(Paragraph(f"Utilisateur ID : {user_id}", styles["Normal"]))
+        story.append(Spacer(1, 12))
+
+        story.append(Paragraph(f"<b>Résultats de prédiction :</b>", styles["Heading2"]))
+
+        data_table = [["Index", "Prédiction"]]
+        for i, pred in enumerate(predictions):
+            data_table.append([str(i + 1), str(pred)])
+
+        table = Table(data_table, hAlign="LEFT")
+        table.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, 0), colors.lightblue),
+            ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+            ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+            ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+        ]))
+        story.append(table)
+
+        doc.build(story)
+        buffer.seek(0)
+
+        return send_file(buffer, as_attachment=True, download_name="rapport_prediction.pdf", mimetype="application/pdf")
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+
+
 
 
 if __name__ == "__main__":
