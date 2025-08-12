@@ -231,6 +231,7 @@ class Models(db.Model):
     modelname = db.Column(db.String(300), nullable=False)
     modelpath = db.Column(db.String(300), nullable=False)
     validpath = db.Column(db.String(300), nullable=False)
+    target_feature = db.Column(db.String(255))
     Accuracy = db.Column(db.Float, nullable=False)
     Precisionn = db.Column(db.Float, nullable=False)
     Recall = db.Column(db.Float, nullable=False)
@@ -1611,23 +1612,88 @@ def calculate_metrics(y_true, y_pred, metrics, task_type, model=None, X=None):
     return results
 
 
-def extract_feature_importance(model, columns):
-    """Extrait l’importance des caractéristiques."""
+def extract_feature_importance(model_or_pipeline, original_columns):
+    """
+    Retourne un dict {col: importance} avec importances normalisées (somme = 1).
+    - model_or_pipeline : soit un pipeline complet (avec named_steps), soit l'estimateur final.
+    - original_columns : liste des noms de colonnes avant pipeline.
+    """
     try:
-        if hasattr(model, "feature_importances_"):
-            importances = model.feature_importances_
-            if isinstance(importances, (np.ndarray, list)) and len(importances) == len(
-                columns
-            ):
-                return dict(zip(columns, importances.tolist()))
-        elif hasattr(model, "coef_"):
-            coefs = model.coef_
-            if isinstance(coefs, (np.ndarray, list)) and len(coefs) == len(columns):
-                return dict(zip(columns, np.abs(coefs).tolist()))
-        return {}
+        # 1) Détecter si on a un pipeline
+        pipeline = None
+        if hasattr(model_or_pipeline, "named_steps"):
+            pipeline = model_or_pipeline
+            # estimator final (ex: 'clf')
+            estimator = pipeline.named_steps.get("clf", None) or model_or_pipeline
+        else:
+            estimator = model_or_pipeline
+
+        # 2) Récupérer les colonnes effectivement gardées par le selector (si présent)
+        selected_columns = list(original_columns)
+        selector = None
+        if pipeline:
+            # chercher un selector courant (VarianceThreshold, SelectKBest, etc.)
+            for name, step in pipeline.named_steps.items():
+                if hasattr(step, "get_support") and callable(step.get_support):
+                    selector = step
+                    break
+        if selector is not None:
+            try:
+                support = selector.get_support()
+                selected_columns = [c for c, s in zip(original_columns, support) if s]
+            except Exception:
+                # fallback : garder original_columns
+                selected_columns = list(original_columns)
+
+        # 3) Extraire l'importance brute
+        importances = None
+        if hasattr(estimator, "feature_importances_"):
+            arr = np.array(estimator.feature_importances_, dtype=float)
+            importances = arr
+        elif hasattr(estimator, "coef_"):
+            coefs = np.array(estimator.coef_, dtype=float)
+            # si multi-classe -> moyenne des valeurs absolues par feature
+            if coefs.ndim == 1:
+                arr = np.abs(coefs)
+            else:
+                arr = np.mean(np.abs(coefs), axis=0)
+            importances = arr
+        else:
+            return {}
+
+        # 4) Si longueur ne correspond pas -> tenter d'ajuster (trim/pad) ou échouer proprement
+        if len(importances) != len(selected_columns):
+            # cas courant : l'estimateur a moins de features (selector interne) ou shape différente
+            # On essaie de loguer et de normaliser en prenant la min-len (safe)
+            logging.warning(
+                f"Feature importance length mismatch: importances={len(importances)}, columns={len(selected_columns)}. "
+                "Attempting safe alignment."
+            )
+            min_len = min(len(importances), len(selected_columns))
+            importances = importances[:min_len]
+            selected_columns = selected_columns[:min_len]
+
+        # 5) Normaliser en relative importances (somme = 1)
+        importances = np.array(importances, dtype=float)
+        # assurer non-négatif
+        importances = np.abs(importances)
+        s = importances.sum()
+        if s <= 0 or np.isnan(s):
+            # fallback : répartir équitablement
+            n = len(importances) if len(importances) > 0 else len(selected_columns)
+            if n == 0:
+                return {}
+            normalized = np.ones(n) / n
+        else:
+            normalized = importances / s
+
+        # 6) Retourner mapping col -> importance (float entre 0 et 1)
+        return dict(zip(selected_columns, normalized.tolist()))
+
     except Exception as e:
         logging.error(f"Erreur extraction importances : {e}")
         return {}
+
 
 
 @app.route("/train/<int:project_id>", methods=["POST"])
@@ -2202,6 +2268,7 @@ def save_model(project_id):
             modelname=data["modelname"],
             modelpath=data["modelpath"],
             validpath=data["validpath"],
+            target_feature=data.get("target_feature"),
             trainingset=train_size,
             testset=test_size,
             Accuracy=data.get("Accuracy", 0.0),
@@ -2494,6 +2561,9 @@ def predict_from_dataframe(model, df, training_columns):
 
     return predictions.tolist()
 
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+
 @app.route("/projects/<int:project_id>/predict", methods=["POST"])
 @jwt_required()
 def predict_model(project_id):
@@ -2563,8 +2633,48 @@ def predict_model(project_id):
         # Prédiction sans utiliser safe_predict
         try:
             predictions = predict_from_dataframe(trained_model, df, training_columns)
-            result_lines = [f"{pred}" for i, pred in enumerate(predictions)]
-            return jsonify({"predictions": result_lines})
+            result_lines = [f"{pred}" for pred in predictions]
+
+            metrics = {}
+            confusion = None
+            labels = None
+
+            # Si target dispo dans le fichier => calculer métriques
+            if target_feature := model_record.target_feature:
+                if target_feature in df.columns:
+                    y_true = df[target_feature]
+                    y_pred = predictions
+                    metrics = {
+                        "accuracy": accuracy_score(y_true, y_pred),
+                        "precision": precision_score(y_true, y_pred, average="weighted", zero_division=0),
+                        "recall": recall_score(y_true, y_pred, average="weighted", zero_division=0),
+                        "f1_score": f1_score(y_true, y_pred, average="weighted", zero_division=0)
+                    }
+                    confusion = confusion_matrix(y_true, y_pred).tolist()
+                    labels = sorted(list(set(y_true) | set(y_pred)))
+                    
+        
+                # Avant le return
+            response_payload = {
+                "predictions": result_lines,
+                "metrics": metrics,
+                "confusion_matrix": confusion,
+                "confusion_labels": labels
+            }
+
+            app.logger.info(f"📤 [PREDICT] Réponse envoyée : {json.dumps(response_payload, indent=2, ensure_ascii=False)}")
+
+            return jsonify(response_payload)
+
+
+            return jsonify({
+                "predictions": result_lines,
+                "metrics": metrics,
+                "confusion_matrix": confusion,
+                "confusion_labels": labels
+            })
+            
+            
 
         except Exception as e:
             app.logger.error(f"❌ Erreur lors de la prédiction : {e}")
@@ -2589,6 +2699,8 @@ def export_prediction_pdf(project_id):
         data = request.get_json()
         predictions = data.get("predictions", [])
         model_name = data.get("model", "Modèle inconnu")
+        confusion_matrix_data = data.get("confusion_matrix", None)
+        confusion_labels = data.get("confusion_labels", None)
         date_now = datetime.now().strftime("%d/%m/%Y %H:%M")
         user_id = get_jwt_identity()
 
@@ -2605,12 +2717,11 @@ def export_prediction_pdf(project_id):
         story.append(Paragraph(f"Utilisateur ID : {user_id}", styles["Normal"]))
         story.append(Spacer(1, 12))
 
+        # Résultats de prédiction
         story.append(Paragraph(f"<b>Résultats de prédiction :</b>", styles["Heading2"]))
-
         data_table = [["Index", "Prédiction"]]
         for i, pred in enumerate(predictions):
             data_table.append([str(i + 1), str(pred)])
-
         table = Table(data_table, hAlign="LEFT")
         table.setStyle(TableStyle([
             ("BACKGROUND", (0, 0), (-1, 0), colors.lightblue),
@@ -2620,12 +2731,56 @@ def export_prediction_pdf(project_id):
         ]))
         story.append(table)
 
+        # Métriques
+        metrics = data.get("metrics", {})
+        if metrics:
+            story.append(Spacer(1, 12))
+            story.append(Paragraph("<b>Métriques du modèle :</b>", styles["Heading2"]))
+            metrics_table = [["Métrique", "Valeur (%)"]]
+            for name, value in metrics.items():
+                metrics_table.append([name, f"{value*100:.2f}"])
+            table = Table(metrics_table, hAlign="LEFT")
+            table.setStyle(TableStyle([
+                ("BACKGROUND", (0, 0), (-1, 0), colors.lightblue),
+                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+                ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+                ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+            ]))
+            story.append(table)
+
+        # Matrice de confusion
+        if confusion_matrix_data and confusion_labels:
+            story.append(Spacer(1, 12))
+            story.append(Paragraph("<b>Matrice de confusion :</b>", styles["Heading2"]))
+
+            # Construire l'en-tête
+            cm_table_data = [[""] + confusion_labels]
+            # Ajouter chaque ligne avec le label en première colonne
+            for label, row in zip(confusion_labels, confusion_matrix_data):
+                cm_table_data.append([label] + row)
+
+            cm_table = Table(cm_table_data, hAlign="LEFT")
+            cm_table.setStyle(TableStyle([
+                ("BACKGROUND", (0, 0), (-1, 0), colors.lightblue),
+                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+                ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+                ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+            ]))
+            story.append(cm_table)
+
         doc.build(story)
         buffer.seek(0)
 
-        return send_file(buffer, as_attachment=True, download_name="rapport_prediction.pdf", mimetype="application/pdf")
+        return send_file(
+            buffer,
+            as_attachment=True,
+            download_name="rapport_prediction.pdf",
+            mimetype="application/pdf"
+        )
+
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 
 
