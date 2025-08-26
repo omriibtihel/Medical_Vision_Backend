@@ -555,15 +555,19 @@ def signup():
         data["password"], method="pbkdf2:sha256", salt_length=8
     )
 
-    # Sauvegarder l’image si présente
-    filename = None
+    # 📌 Sauvegarder l’image si présente, sinon utiliser "user.jpg"
     if file:
         filename = secure_filename(file.filename)
         os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
         filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
         file.save(filepath)
     else:
-        filepath = None
+        # fallback par défaut
+        filename = "user.jpg"
+        filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+
+    # 📌 Debug pour la checkbox
+    print("Remember me reçu:", data.get("rememberMe"))
 
     new_user = User(
         name=data["name"],
@@ -573,7 +577,7 @@ def signup():
         speciality=data.get("speciality"),
         hospital=data.get("hospital"),
         profile_image=filepath,
-        remember_me=(data.get("rememberMe") == "true"),
+        remember_me=(data.get("rememberMe") == "true"),  # convert string → bool
         created_at=datetime.utcnow(),
         is_approved=False,
         trial_count=0,
